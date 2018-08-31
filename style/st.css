@@ -1,0 +1,410 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body, html{
+	height:100%;
+	font-family: "Copperplate Got", sans-serif;
+}
+/* scroll bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/* Preloader css */
+.preload{
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/bg_start.jpeg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+  background-position: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.logo1{
+	margin: 150px auto 50px auto;
+	text-align: center;
+}
+.loader-frame{
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	position: relative;
+}
+.loader1, .loader2{
+	position: absolute;
+	border: 5px solid transparent;
+	border-radius: 50%;
+}
+.loader1{
+	width: 70px;
+	height: 70px;
+	border-top: 5px solid azure;
+	border-bottom: 5px solid azure;
+	animation: clockwisespin 2s linear 3;
+}
+.loader2{
+	width: 70px;
+	height: 70px;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	animation: anticlockwisespin 2s linear 3;
+}
+@keyframes clockwisespin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes anticlockwisespin{
+	from{ transform: rotate(0deg); }
+	to{ transform: rotate(-360deg); }
+}
+@keyframes fadeout{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+.st{
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+/* Parallax & main Css*/
+.parallax {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/parallax1.jpeg");
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+#top{
+  font-family: "Copperplate Got", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 34px;
+}
+.frm{
+  text-align: center;
+  padding: 40px;
+}
+.sf{
+    font-family: "Copperplate Got", sans-serif;
+    background: #ffffff;
+    border: 0;
+    padding: 15px;
+    font-size: 13px;
+    border-radius: 12px;
+}
+.go{
+  font-family: "Copperplate Got", sans-serif;
+  text-transform: uppercase;
+  outline: 2;
+  background: #fc1a02;
+  border: 0;
+  padding: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 80px;   
+  border-radius: 12px;
+}
+.go:hover,.go:active{
+  background: #f5444a;
+}
+.state{
+    font-family: "Copperplate Got", sans-serif;
+    z-index: -1;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 12px;
+}
+.upper{
+	height: 800px;
+ 	background-color:#DCDCDC;
+	font-size: 5px;
+}
+.middle{
+	height: 30px;
+}
+.lower{
+	height: 100px;
+ 	background-color:#313d47;
+	font-size: 5px;
+}
+.brdr{
+	background: 0 0!important;
+    color: #f35c47!important;
+    border-radius: 2px;
+    border: 1px solid #f35c47!important;
+}
+.brdr{
+	background-color: #f35c47;
+}
+.lg-btn{
+	padding: 10px;
+  height: 40px;
+}
+.sz{
+	font-size: 18px;
+    padding: 6px 13px;
+}
+.btn{
+	-webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-decoration: none;
+    float: right;
+}
+.logo{
+	text-align: center;
+}
+h1{
+	color: #fff;
+  font-weight: 100;
+  font-size: 60px;
+  padding: 20px 0;
+  text-align: center;
+	font-family: "Copperplate Got", sans-serif;
+}
+.lgw{
+  width:960px;
+  margin:0px auto;
+  padding: 20px;
+}
+.detail{
+  font-size: 15px;
+  display: flex;
+  cursor: pointer;
+}
+.detail>h3
+{
+  padding: 25px;
+  color: #666;
+  margin-left: 68px;
+  cursor: pointer;
+}
+.detail>h3:hover
+{
+  color: #000;
+}
+.imgdetail>img{
+  margin-left: 91px;
+  cursor: pointer;
+}
+.imgdetail2>img{
+  margin-left: 29px;
+  padding: 10px;
+  cursor: pointer;
+}
+.detail2{
+  font-size: 15px;
+  display: flex;
+  cursor: pointer;
+}
+.detail2>h3
+{
+  padding: 5px;
+  color: #666;
+  margin-left: 129px;
+  cursor: pointer;
+}
+.detail3{
+  font-size: 15px;
+  display: flex;
+  cursor: pointer;
+}
+.detail3>h3
+{
+  padding: 5px;
+  color: #666;
+  margin-left: 136px;
+  cursor: pointer;
+}
+.lgw>h2
+{
+  padding: 10px;
+  font-size: 25px;
+}
+.cr{
+  font-size: 19px;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+.social{
+  height: 180px;
+  background: black;
+  text-align: center;
+}
+.txt{
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.txt:hover
+{
+  color: #f4511e;
+  transition: 2s;
+}
+.simg{
+  padding: 28px;
+}
+.simg>img
+{
+  margin-right: 50px; 
+}
+.fb
+{
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.fb:hover{
+    content: url(../images/fb1.png);
+    opacity: 0.6;
+}
+.tw{
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.tw:hover{
+    content: url(../images/twitter.png);
+    opacity: 0.6;
+}
+.pn{
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+
+}
+.pn:hover{
+    content: url(../images/linkedin.png);
+    opacity: 0.6;
+}
+/*Login page css*/
+#lg{
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/bg_ls.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+.login-page{
+  width:360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+.form{
+  position: relative;
+  z-index: 1;
+  background: rgba(102,102,102,0.8);
+  max-width: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+.form  input{
+  font-family: "Copperplate Got", sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.butt
+{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #fc1a02;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #000;
+  cursor: pointer;
+}
+.butt:hover,.butt:active{
+  background: #fc1a02;
+   transition: 2s;
+}
+.form .message{
+  margin: 15px 0 0;
+  color: aliceblue;
+  font-size: 12px;
+}
+.form .message{
+  color: #fc1a02;
+  text-decoration: none;
+}
+.form a{
+  text-decoration: none;
+  color:aliceblue;
+}
+.form .message1{
+  font-size: 25px;
+  font-family: "Copperplate Got", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+}
+.form .register-form{
+  display:none;
+}
+
+/*profile page*/
+#profile{ 
+  width:100%;
+  height:100%;
+  background:#111;
+  overflow-y: hidden;
+}
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/landscape-sky-night-stars-29435.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.pos{
+   position: absolute;
+}
+#profile>.pos>h1{
+   margin-left: 465px;
+}
+.overlay{
+    
+    background: #c5b7b7;
+    font-size: 20px;
+    padding: 15px;
+    width: 384px;
+    margin: 21px auto;
+    height: 375px;
+    font-family: "Copperplate Got", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 472px;
+    margin-top: 20px;
+}
